@@ -4,16 +4,16 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                git branch: 'main', changelog: false, credentialsId: 'ssh', poll: false, url: 'https://github.com/aniketghadge81297/Jenkins.git'
+                git changelog: false, poll: false, url: 'https://github.com/aniketghadge81297/studentapp.ui'
                 echo 'this is pull operation'
             }
         }
-         stage('build') {
-             steps {
-                 sh '/opt/apache-maven-3.9.6/studentapp-ui-app/mvn clean package'
-                 echo 'this is build operation'
-             }
-         }
+        stage('build') {
+            steps {
+                sh '/opt/apache-maven/bin/mvn clean package'
+                echo 'this is build operation'
+            }
+        }
         // stage('test') {
         //     steps {
         //         echo 'this is test operation'
