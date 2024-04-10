@@ -10,6 +10,7 @@ pipeline {
         }
          stage('build') {
              steps {
+                 sh '/opt/apache-maven-3.9.6/studentapp-ui-app/mvn clean package'
                  echo 'this is build operation'
              }
          }
