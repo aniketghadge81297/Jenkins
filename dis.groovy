@@ -8,11 +8,11 @@ pipeline {
                 echo 'this is pull operation'
             }
         }
-        // stage('build') {
-        //     steps {
-        //         echo 'this is build operation'
-        //     }
-        // }
+         stage('build') {
+             steps {
+                 echo 'this is build operation'
+             }
+         }
         // stage('test') {
         //     steps {
         //         echo 'this is test operation'
