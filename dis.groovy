@@ -14,11 +14,11 @@ pipeline {
                 echo 'this is build operation'
             }
         }
-        // stage('test') {
-        //     steps {
-        //         echo 'this is test operation'
-        //     }
-        // }
+        stage('test') {
+            steps {
+                echo 'this is test operation'
+            }
+        }
         // stage('quallity check') {
         //     steps {
         //         echo 'this is quality check operation'
